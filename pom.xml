@@ -18,7 +18,7 @@
 
 	<groupId>pl.robous</groupId>
 	<artifactId>sf-pet-clinic</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>sf-pet-clinic</name>
 	<description>SF Pet Clinic Project</description>
 
@@ -45,6 +45,6 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:leszekjanczewski/sf-pet-clinic.git</developerConnection>
-    <tag>sf-pet-clinic-0.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
 </project>
