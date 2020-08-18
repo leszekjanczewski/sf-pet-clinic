@@ -1,11 +1,11 @@
 package pl.robous.sfpetclinic.services.map;
 
 import pl.robous.sfpetclinic.model.Vet;
-import pl.robous.sfpetclinic.services.CrudService;
+import pl.robous.sfpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
