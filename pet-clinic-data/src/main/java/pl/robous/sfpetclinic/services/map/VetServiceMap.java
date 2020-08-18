@@ -1,10 +1,12 @@
 package pl.robous.sfpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.robous.sfpetclinic.model.Vet;
 import pl.robous.sfpetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
