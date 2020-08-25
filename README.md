@@ -1,1 +1,1 @@
-# Spring Framework - Pet Clini
+# Spring Framework - Pet Clinic
