@@ -7,10 +7,10 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-class SfPetClinicApplicationTests {
+class SfPetClinicApplicationTest {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
 
+    }
 }
