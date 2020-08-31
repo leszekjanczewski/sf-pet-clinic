@@ -9,14 +9,18 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>pl.robous</groupId>
     <artifactId>pet-clinic-web</artifactId>
+    <version>0.0.5-SNAPSHOT</version>
+
+    <name>pet-clinic-web</name>
 
     <properties>
         <!-- Web dependencies -->
         <webjars-bootstrap.version>4.5.2</webjars-bootstrap.version>
         <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
         <webjars-jquery.version>3.5.1</webjars-jquery.version>
-        <wro4j.version>1.8.0</wro4j.version>
+        <wro4j.version>1.9.0</wro4j.version>
     </properties>
 
     <dependencies>
@@ -37,12 +41,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -80,8 +78,8 @@
             <scope>test</scope>
             <exclusions>
                 <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -93,6 +91,12 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>3.3.3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -128,7 +132,7 @@
                     <dependency>
                         <groupId>org.mockito</groupId>
                         <artifactId>mockito-core</artifactId>
-                        <version>${mockito.version}</version>
+                        <version>3.3.3</version>
                     </dependency>
                 </dependencies>
             </plugin>
