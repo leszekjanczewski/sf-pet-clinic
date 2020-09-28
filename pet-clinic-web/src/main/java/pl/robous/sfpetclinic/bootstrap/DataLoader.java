@@ -36,6 +36,7 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void loadData() {
+        System.out.println("Load data ...");
         PetType dog = new PetType();
         dog.setName("Dog");
         PetType saveDogPetType = petTypeService.save(dog);
@@ -102,5 +103,7 @@ public class DataLoader implements CommandLineRunner {
         vet2.getSpecialities().add(saveSurgery);
         vet2.getSpecialities().add(saveDentistry);
         vetService.save(vet2);
+
+        System.out.println("Data loaded!");
     }
 }
