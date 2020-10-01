@@ -10,6 +10,8 @@ import pl.robous.sfpetclinic.model.Visit;
 import pl.robous.sfpetclinic.services.PetService;
 import pl.robous.sfpetclinic.services.VisitService;
 
+import java.beans.PropertyEditorSupport;
+import java.time.LocalDate;
 import java.util.Map;
 
 @Controller
@@ -25,7 +27,15 @@ public class VisitController {
 
     @InitBinder
     public void setAllowedFields(WebDataBinder dataBinder) {
+
         dataBinder.setDisallowedFields("id");
+
+        dataBinder.registerCustomEditor(LocalDate.class, new PropertyEditorSupport() {
+            @Override
+            public void setAsText(String text) throws IllegalArgumentException {
+                setValue(LocalDate.parse(text));
+            }
+        });
     }
 
     @ModelAttribute("visit")
